@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">EsperandoAlBus</string>
+    <string name="titulo">ESPERANDO AL BUS</string>
+    <string name="botonInicio">CONTINUAR</string>
+    <string name="bienvenida">BIENVENIDO</string>
+</resources>

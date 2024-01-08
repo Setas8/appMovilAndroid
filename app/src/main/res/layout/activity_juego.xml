@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A4E8A5"
+    tools:context=".ActivityJuego">
+
+    <TextView
+        android:id="@+id/wellcomeTxV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="79dp"
+        android:layout_marginBottom="78dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/numEdTx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numEdTx"
+        android:layout_width="185dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="62dp"
+        android:ems="10"
+        android:hint="Introducir número"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/TxVIRecord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wellcomeTxV" />
+
+    <Button
+        android:id="@+id/salirBtn"
+        android:layout_width="175dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="38dp"
+        android:text="VOLVER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/contBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxViIntentos" />
+
+    <Button
+        android:id="@+id/contBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="42dp"
+        android:text="JUGAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/salirBtn"
+        app:layout_constraintTop_toBottomOf="@+id/TxVIRecord" />
+
+    <TextView
+        android:id="@+id/txViNombre"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="32dp"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/TxViIntentos"
+        app:layout_constraintEnd_toStartOf="@+id/TxVIRecord"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TxVIRecord"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="139dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/contBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txViNombre"
+        app:layout_constraintTop_toBottomOf="@+id/numEdTx" />
+
+    <TextView
+        android:id="@+id/TxViIntentos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="63dp"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/salirBtn"
+        app:layout_constraintEnd_toStartOf="@+id/TxVIRecord"
+        app:layout_constraintStart_toStartOf="@+id/txViNombre"
+        app:layout_constraintTop_toBottomOf="@+id/txViNombre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
